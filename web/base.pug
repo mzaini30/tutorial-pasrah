@@ -1,0 +1,13 @@
+mixin css(x)
+  link(rel="stylesheet" href=x)
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Tutorial Pasrah
+    +css("vendor/bootstrap.min.css")
+    block head
+  body
+    block body
