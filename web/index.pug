@@ -1,8 +1,15 @@
 extends base.pug
 
+mixin list(judul, link)
+  a.list-group-item.list-group-item-action(href=`artikel/${link}.html`) #{judul}
+
 block head
   +css("vendor/bootstrap.min.css")
 
 block body
-  .m-3
-    p Hello World
+  .p-3
+    .list-group
+      +list("Kenapa Harus Pasrah?", "")
+      +list("Pasrah Sebagai Kunci Sukses", "")
+      +list("Ibadah Itu Harus Pasrah", "")
+      +list("Pasrah Bukan Berarti Tidak Menolak", "")
